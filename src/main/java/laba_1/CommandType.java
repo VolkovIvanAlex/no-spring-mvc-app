@@ -1,3 +1,5 @@
+package laba_1;
+
 public enum CommandType
 {
 	CREATE_PRODUCT,

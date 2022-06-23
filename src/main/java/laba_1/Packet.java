@@ -1,3 +1,5 @@
+package laba_1;
+
 import java.nio.ByteBuffer;
 
 
@@ -73,7 +75,7 @@ public class Packet
 	@Override
 	public String toString()
 	{
-		return "Packet{" +
+		return "laba_1.Packet{" +
 				"bMagic=" + bMagic +
 				", bSrc=" + bSrc +
 				", bPktId=" + bPktId +

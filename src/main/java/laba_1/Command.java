@@ -1,3 +1,5 @@
+package laba_1;
+
 import java.util.Arrays;
 
 
@@ -51,7 +53,7 @@ public class Command
 	@Override
 	public String toString()
 	{
-		return "Command{" +
+		return "laba_1.Command{" +
 				"commandType=" + commandType +
 				", bUserId=" + bUserId +
 				", commandBody=" + Arrays.toString(commandBody) +

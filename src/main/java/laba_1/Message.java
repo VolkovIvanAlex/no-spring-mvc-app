@@ -1,3 +1,5 @@
+package laba_1;
+
 import java.nio.ByteBuffer;
 
 
@@ -13,6 +15,13 @@ public class Message
 		this.bUserId = byteBuffer.getInt();
 		this.message = new byte [wLen - Integer.BYTES * 2];
 		byteBuffer.get(message , 0, wLen - Integer.BYTES * 2 );
+	}
+
+	public Message(final int cType, final int bUserId, final byte[] message)
+	{
+		this.cType = cType;
+		this.bUserId = bUserId;
+		this.message = message;
 	}
 
 	public Message()

@@ -1,3 +1,5 @@
+package laba_1;
+
 public class CRC16
 {
 	public static short crc16(byte[] bytes)
