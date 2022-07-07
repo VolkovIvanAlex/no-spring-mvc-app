@@ -28,7 +28,7 @@ public class StoreClientTCP
 		String msg = new String(packet.getbMsg().getMessage());
 		if (!StoreServerTCP.running)
 		{
-			out.println("waiting...");
+			System.out.println("waiting...");
 		}
 		else out.println(msg);
 	}

@@ -2,10 +2,15 @@ package laba_2.model;
 
 public class Product
 {
+	private Integer id;
 	private String name;
 	private Category category;
 	private Integer quantity;
 	private Double price;
+
+	public Product()
+	{
+	}
 
 	public Product(final String name, final Category category, final Integer quantity, final Double price)
 	{
@@ -13,6 +18,26 @@ public class Product
 		this.category = category;
 		this.quantity = quantity;
 		this.price = price;
+	}
+
+	public Product(final Integer id, final String name, final Category category, final Integer quantity,
+			final Double price)
+	{
+		this.id = id;
+		this.name = name;
+		this.category = category;
+		this.quantity = quantity;
+		this.price = price;
+	}
+
+	public Integer getId()
+	{
+		return id;
+	}
+
+	public void setId(final Integer id)
+	{
+		this.id = id;
 	}
 
 	public String getName()
@@ -53,5 +78,17 @@ public class Product
 	public void setPrice(final Double price)
 	{
 		this.price = price;
+	}
+
+	@Override
+	public String toString()
+	{
+		return "Product{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", category=" + category +
+				", quantity=" + quantity +
+				", price=" + price +
+				'}';
 	}
 }

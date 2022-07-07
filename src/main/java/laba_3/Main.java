@@ -43,7 +43,7 @@ public class Main
 		String response2 = clientTCP2.readMessage();
 		System.out.println(response2);
 
-		String message3 = "stop server";
+		String message3 = "hello again !";
 		byte[] encryptedMessageBytes3 = message3.getBytes();
 		Command command3 = new Command(1, 1, encryptedMessageBytes3);
 		Packet packet3 = new Packet(Encoder.encode(command3));
